@@ -4,25 +4,47 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Happy Time</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <title>Happy Time Contact</title>
 </head>
 <body>
-  <header id="contact-header">
+  <header id="header">
     <div class="container">
       <h1>Contact</h1>
     </div>
   </header>
 
-  <div class="containter">
+  <nav id="navbar">
+    <div class="container">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Happy!</a></li>
+        <li><a href="contact.html" target="_blank">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
     <main id="contact-main">
-      <form>
-        <label for="name">Name<input type="text" name="name" id="name" required></label>
+      <form class="contact-form">
+        <div class="form-group">
+          <label for="name">Name<input type="text" id="name" name="contact-info" placeholder="ex. Happy McHapperson" required></label>
+        </div>
         <br>
-        <label for="email">Email<input type="text" name="email" id="email" required></label>
+        <div class="form-group">
+          <label for="email">Email<input type="text" id="email" name="contact-info" placeholder="ex. happyface@happytimes.com" required></label>
+        </div>
         <br>
-        <label for="message">Message<textarea name="message"></textarea></label>
+        <div class="form-group">
+          <label for="message">Message<textarea id="message" name="contact-info"></textarea></label>
+        </div>
         <br>
-        <button type="submit">Submit</button>
+        <div class="form-group">
+          <button type="submit">Submit</button>
+        </div>
       </form>
     </main>
   </div>
