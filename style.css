@@ -1,3 +1,5 @@
+
+
 body {
   background-color: #ccc;
   color: #555;
@@ -74,6 +76,13 @@ body {
   box-sizing: border-box;
 }
 
+#sec1 {
+  border: 1px solid #555;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
 #contactMain {
   margin-top: 30px;
 }
@@ -94,12 +103,21 @@ body {
   color: #ff33ff;
 }
 
-.formGroup input[type="text"], .formGroup textarea {
+.formGroup {
+  
+  
+}
+
+.formGroup input[type="text"] {
   display: block;
-  margin: auto;
   width: 75%;
-  height: 22px;
+  height: 22px; 
+}
+
+.formGroup textarea {
   display: block;
+  width: 75%;
+  height: 150px;
 }
 
 #mainFooter {
@@ -108,11 +126,16 @@ body {
 }
 
 @media all and (max-width: 768px) {
-  #mainBody {
+  #mainBody, #sidebar {
     width: 100%;
+  }
+
+  #mainBody h3 {
+    text-align: center;
+  }
+
+  #sidebar h4 {
+    text-align: center;
   }
   
-  #sidebar {
-    width: 100%;
-  }
 }
